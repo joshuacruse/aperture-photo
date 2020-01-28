@@ -47,6 +47,6 @@ app.use(indexRoutes);
 app.use(photoRoutes);
 app.use(commentRoutes);
 
-app.listen('3000', function() {
+app.listen(process.env.PORT || 8080, function() {
   console.log('Server Online.')
 });
