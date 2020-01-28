@@ -18,7 +18,7 @@ var commentRoutes = require("./routes/comments"),
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect("mongodb://localhost/post_photo");
+mongoose.connect("mongodb+srv://aperture:12345@jeeddb-on8el.mongodb.net/test?retryWrites=true&w=majority");
 app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
