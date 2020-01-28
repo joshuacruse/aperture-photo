@@ -1,0 +1,22 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+  <div class="row">
+    <div class="text-center col-lg-12">
+      <h1>Add New Comment to <%= photo.name %></h1>
+    </div>
+    <div class="w-50 mb-3 mt-3 ml-auto mr-auto">
+      <form class="" action="/photos/<%= photo._id %>/comments" method="POST">
+        <div class="form-group">
+          <input class="form-control" type="text" name="comment[text]" placeholder="Type your comment here.">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg btn-primary btn-block">Submit</button>
+        </div>
+      </form>
+      <a class="btn btn-sm btn-light" href="/photos/<%= photo._id %>">Go Back</a>
+    </div>
+  </div>
+</div>
+
+<%- include("../partials/footer") %>

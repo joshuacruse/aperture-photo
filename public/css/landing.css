@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+#landing-hr {
+  border-color: white;
+  max-width: 300px;
+}
+body {
+  background-color: black;
+  background-image: url(/img/camera_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#landing-body {
+  background-color: black;
+  background-image: url(/img/photographer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#landing-header {
+  margin-top: 30vh;
+}
+
+.card {
+  border-style: none;
+}
+
+.comment-card {
+  border-style: solid;
+}
