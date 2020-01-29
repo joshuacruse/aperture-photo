@@ -13,7 +13,7 @@ router.get("/photos/:id/comments/new", middleware.isLoggedIn, function(req, res)
     // find photo by id
     Photo.findById(req.params.id, function (err, photo) {
       if (err) {
-        req.flash("error", "Error. Comment could not be added.");
+        req.flash("error", "Error. The review could not be added.");
         res.redirect("back");
       }
       else {
@@ -33,7 +33,7 @@ router.post("/photos/:id/comments", middleware.isLoggedIn, function(req,res) {
     else {
       Comment.create(req.body.comment, function(err, comment) {
         if (err) {
-          req.flash("error", "Error. The comment could not be added.");
+          req.flash("error", "Error. The review could not be added.");
           console.log(err);
           res.redirect("back");
         }
@@ -45,7 +45,7 @@ router.post("/photos/:id/comments", middleware.isLoggedIn, function(req,res) {
           comment.save();
           photo.comments.push(comment);
           photo.save();
-          req.flash("success", "Comment added.");
+          req.flash("success", "Review added.");
           res.redirect("/photos/" + photo._id);
         }
       });
@@ -57,7 +57,7 @@ router.post("/photos/:id/comments", middleware.isLoggedIn, function(req,res) {
 router.get("/photos/:id/comments/:comment_id/edit", middleware.checkCommentOwnership, function(req, res) {
   Comment.findById(req.params.comment_id, function(err, foundComment) {
     if (err) {
-      req.flash("error", "Error. The comment was not changed.");
+      req.flash("error", "Error. The review was not changed.");
       res.redirect("back");
     }
     else {
@@ -86,7 +86,7 @@ router.delete("/photos/:id/comments/:comment_id", middleware.checkCommentOwnersh
       res.redirect("back");
     }
     else {
-      req.flash("success", "Comment removed.");
+      req.flash("success", "Review successfully removed.");
       res.redirect("/photos/" + req.params.id);
     }
   })

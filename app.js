@@ -10,7 +10,7 @@ var express = require("express"),
     Comment = require("./models/comment"),
     User = require("./models/user");
 
-// requiring routes
+// require route files
 var commentRoutes = require("./routes/comments"),
     photoRoutes = require("./routes/photos"),
     indexRoutes = require("./routes/index")
