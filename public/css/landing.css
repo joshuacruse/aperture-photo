@@ -36,7 +36,7 @@ body {
 /* star rating selection */
 .star{
   color: #0275d8;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   padding: 0 0rem; /* space out the stars */
 }
 .star::before{
