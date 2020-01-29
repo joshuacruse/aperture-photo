@@ -32,3 +32,38 @@ body {
 .comment-card {
   border-style: solid;
 }
+
+/* star rating selection */
+.star{
+  color: #0275d8;
+  font-size: 3.5rem;
+  padding: 0 0rem; /* space out the stars */
+}
+.star::before{
+  content: '\2606';
+  cursor: pointer;
+}
+.star:hover::before{
+  /* the :hover should come first */
+  content: '\2605';
+  color: #0275d8;
+}
+.star.rated::before{
+  /* the :hover should come first */
+  content: '\2605';
+}
+
+/* star rating display */
+.stardisplay{
+  color: #0275d8;
+  font-size: 1.2rem;
+  padding: 0; /* space out the stars */
+  line-height: 0rem;
+}
+.stardisplay::before{
+  content: '\2606';
+}
+.stardisplay.rated::before{
+  /* the :hover should come first */
+  content: '\2605';
+}

@@ -34,6 +34,7 @@ router.post("/photos/:id/comments", middleware.isLoggedIn, function(req,res) {
       Comment.create(req.body.comment, function(err, comment) {
         if (err) {
           req.flash("error", "Error. The comment could not be added.");
+          console.log(err);
           res.redirect("back");
         }
         else {
