@@ -7,7 +7,7 @@ html {
 }
 body {
   background-color: black;
-  background-image: url(/img/camera_bg.jpg);
+  background-image: url(https://i.imgur.com/FSGfkfa.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
 }
 #landing-body {
   background-color: black;
-  background-image: url(/img/photographer.jpg);
+  background-image: url(https://i.imgur.com/XlDWUOA.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
