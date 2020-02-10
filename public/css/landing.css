@@ -67,3 +67,11 @@ body {
   /* the :hover should come first */
   content: '\2605';
 }
+
+.card, .jumbotron, img {
+  border-radius: 0 !important;
+}
+
+.jumbotron {
+  background-color: white;
+}

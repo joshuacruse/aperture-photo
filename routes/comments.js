@@ -24,7 +24,7 @@ router.get("/photos/:id/comments/new", middleware.isLoggedIn, function(req, res)
 
 // create comment route
 router.post("/photos/:id/comments", middleware.isLoggedIn, function(req,res) {
-  // look up photo w/ id
+  // look up photo with id
   Photo.findById(req.params.id, function(err, photo) {
     if (err) {
       req.flash("error", "Photo not found.");
