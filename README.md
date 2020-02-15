@@ -7,7 +7,7 @@ Users can also rate each other's photos with a 1-5 star rating system.
 
 Application built with MongoDB, Mongoose, Express, Bootstrap 4, and Node.js
 
-==================================
+===========================
 
 Features:
 1. Fully Responsive
@@ -15,7 +15,7 @@ Features:
 3. Uses RESTful routing
 4. Stores data in remote database (MongoDB Atlas)
 
-==================================
+===========================
 
 Features to Add:
 1. Rating average for each photo
